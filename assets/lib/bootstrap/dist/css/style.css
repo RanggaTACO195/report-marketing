@@ -1,0 +1,146 @@
+body {
+    margin-top: 50px;
+}
+
+.navbar-brand{
+	font-size: 2em;
+	padding: 0px;
+	margin: 0px;
+	font-family: helvetica;
+	color: lightblue;
+	text-shadow: 5px 5px 10px #000;
+}
+
+.jumbotron {
+	background-image: url('../img/slider.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0px 0px;
+	height: 250px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.jumbotron img {
+    width: 300px;
+    border: 5px solid rgba;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0,9);
+}
+
+.jumbotron h1 {
+	text-shadow: 1px 1px 10px rgba(0,0,0,0,9);
+	color: #fff;
+}
+
+
+.jumbotron-kiri {
+	background-image: url('../img/parallax.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.jumbotron-tengah .div-kiri, .jumbotron-tengah .div-kanan{
+	padding: 0.5px !important;
+}
+
+.jumbotron-kanan {
+	background-image: url('../img/paralax1.png');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 400px 0px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	padding: 1px;
+}
+
+
+section {
+    min-height: 420px;
+}
+
+footer {
+    min-height: 50px;
+    padding-top:12px;
+}
+
+.ig-thumbnail {
+	width: 100px;
+	height: 100px;
+	float: left;
+	overflow: hidden;
+}
+
+.ig-thumbnail img {
+	width: 100px;
+}
+
+	.ig-thumbnail {
+	width: 100px;
+	height: 100px;
+	float: left;
+	overflow: hidden;
+}
+
+.ig-thumbnail img {
+	width: 100px;
+}
+
+.portfolio .thumbnail{
+	opacity: 0;
+
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.portfolio .thumbnail.muncul {
+	opacity: 1;	
+	transform: translate(0, 0);
+}
+
+/*
+|	ABOUT 
+|--------------------*/
+.pKiri {
+	opacity: 0;
+	transform: translate(-50px, 0);
+	transition: 1s;
+}
+
+.pKanan {
+	opacity: 0;
+	transform: translate(50px, 0);
+	transition: 1s;
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.about-kiri {
+	background-image: url('../img/paralax0.png');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+@media all and (max-width: 992px){
+	.jumbotron-kanan {
+		background-position: 0px 0px;
+	}
+}

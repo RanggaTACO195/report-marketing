@@ -1,0 +1,8 @@
+AZI			K@lgenInn0labAZI
+Hetero			K@lgenInn0labHetero
+Kalbe GOF		K@lgenInn0labGOF
+Kalbe Optima		K@lgenInn0labOptima
+MSD			K@lgenInn0labMSD
+Roche			K@lgenInn0labRoche
+Soho			K@lgenInn0labSoho
+ZPT			K@lgenInn0labZPT
