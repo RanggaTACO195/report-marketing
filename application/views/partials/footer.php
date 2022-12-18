@@ -265,8 +265,14 @@
                             if (TestStatus == "Roche") {
                             $(".tbl_1").show('300');
                              $(".tbl_2").hide('300');
+                                let date_result = "";
                             for (var i = 0; i < response.data.length; i++) {
-                            datatable.row.add([response.data[i].Test,response.data[i].Clinician, response.data[i].Pathologist, response.data[i].Account, response.data[i].City, response.data[i].Patient_Singkatan, response.data[i].Age, response.data[i].Sex, response.data[i].Clinical_Diagnosis, response.data[i].KalgenInnolabID, response.data[i].Date_Received, response.data[i].Date_of_Result_Out_SendtoCostumer, response.data[i].Result_Makroskopik, response.data[i].TestStatus]).draw(false);
+                                if (response.data[i].Date_of_Result_Out_SendtoCostumer == "1970-01-01") {
+                                    date_result = "";
+                                } else { 
+                                date_result = response.data[i].Date_of_Result_Out_SendtoCostumer;
+                                }   
+                            datatable.row.add([response.data[i].Test,response.data[i].Clinician, response.data[i].Pathologist, response.data[i].Account, response.data[i].City, response.data[i].Patient_Singkatan, response.data[i].Age, response.data[i].Sex, response.data[i].Clinical_Diagnosis, response.data[i].KalgenInnolabID, response.data[i].Date_Received, date_result, response.data[i].Result_Makroskopik, response.data[i].TestStatus]).draw(false);
                             };
                             datatable.draw();
                             }else{
@@ -278,6 +284,9 @@
                             datatable2.draw();
                              
                             }
+                            
+                      
+                            
                         } else {
                             Swal.fire({
                                 icon: 'error',

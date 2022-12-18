@@ -6,3 +6,4 @@ MSD			K@lgenInn0labMSD
 Roche			K@lgenInn0labRoche
 Soho			K@lgenInn0labSoho
 ZPT			K@lgenInn0labZPT
+Admin    		K@lgenInn0lab
