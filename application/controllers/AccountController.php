@@ -1,6 +1,7 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
-class AccountController extends CI_Controller {
+include_once('AuthController.php');
+class AccountController extends AuthController {
 
     public function __construct()
     {
