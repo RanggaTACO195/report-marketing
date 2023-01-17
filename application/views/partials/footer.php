@@ -242,7 +242,8 @@
             let TestStatus = $("#TestStatus").val();
             let Date_Received_Now = $("#Date_Received_Now").val();
             let Date_Received_last = $("#Date_Received_last").val();
-             datatable.clear().draw();
+            datatable2.clear().draw();
+           datatable.clear().draw();
             if (TestStatus == "") {
                 //create sweat alert
                 Swal.fire({
@@ -276,7 +277,7 @@
                             };
                             datatable.draw();
                             }else{
-                                $(".tbl_2").show('300');
+                             $(".tbl_2").show('300');
                              $(".tbl_1").hide('300');
                                for (var i = 0; i < response.data.length; i++) {
                             datatable2.row.add([response.data[i].Test,response.data[i].Clinician, response.data[i].Pathologist, response.data[i].Account, response.data[i].City,  response.data[i].Age, response.data[i].Sex, response.data[i].Clinical_Diagnosis, response.data[i].KalgenInnolabID,response.data[i].VoucherNumber,response.data[i].Date_Received, response.data[i].Date_of_Result_Out_SendtoCostumer, response.data[i].Result_Makroskopik, response.data[i].TestStatus]).draw(false);
@@ -288,6 +289,9 @@
                       
                             
                         } else {
+                            //clear datatable2 
+                            datatable2.clear().draw();
+                            datatable.clear().draw();
                             Swal.fire({
                                 icon: 'error',
                                 title: 'Error',
